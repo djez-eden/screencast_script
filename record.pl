@@ -57,4 +57,4 @@ my $outfile = 'Screencast_' . $dt;
 #-------------------------------------------------------------------------------
 #  Execution de avconv
 #-------------------------------------------------------------------------------
-qx{avconv -y -f alsa -i hw:$son -f x11grab -show_region 1 -s $dim -r 15 -i :0.0$ofs -vcodec libx264 -preset ultrafast $outfile.avi"};
+qx{avconv -y -f alsa -i hw:$son -f x11grab -show_region 1 -s $dim -r 15 -i :0.0$ofs -vcodec libx264 -preset ultrafast $outfile.avi};
